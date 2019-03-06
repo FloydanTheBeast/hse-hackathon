@@ -5,7 +5,7 @@ html {
 }
 
 body > div {
-    margin-bottom: 3rem;
+    margin-bottom: 3rem !important;
     /* padding: 2rem; */
 }
 
@@ -67,6 +67,26 @@ ul {
     margin-bottom: 0.75rem;
     background-color: #2f3640;
     border-radius: 0.5rem;
+}
+
+.timeline {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    background-color: #fff;
+    color: #222;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.timeline > div {
+    flex: 1;
+    text-align: center;
+}
+
+.timeline > div:not(:last-child) {
+    border-right: 1px solid #ccc;
 }
 
 .button {
