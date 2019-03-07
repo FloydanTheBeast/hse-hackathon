@@ -172,3 +172,16 @@ ul {
         margin-bottom: 2rem;
     }
 }
+
+@media screen and (max-width: 30em) {
+    html {
+        font-size: 13px;
+    }
+    
+    .rules-list,
+    .timeline-container,
+    .topic-container,
+    .header .container {
+        width: 100%;
+    }
+}
