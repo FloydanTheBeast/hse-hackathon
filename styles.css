@@ -35,26 +35,28 @@ ul {
     padding: 0;
 }
 
-.social-icon {
+.social-links {
     position: fixed;
-    right: 2rem;
-    top: 2rem;
-    width: 4rem;
-    height: 4rem;
-    background: url('assets/telegram.svg');
-    transition: all 0.2s;
-    filter: opacity(80%)
-}
-
-.social-icon:hover {
-    filter: opacity(100%);
-    cursor: pointer;
-}
-
-.social-icon > a {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+    background-color: #353b48;
     width: 100%;
-    height: 100%;
+}
+
+.social-icon {
+    display: block;
+    margin: 0 1rem;
+    width: 3rem;
+    height: 3rem;
+    background: url('assets/telegram.svg');
+}
+
+.social-links a {
+    padding: 1rem 2rem;
 }
 
 .header {
@@ -74,7 +76,6 @@ ul {
     margin: auto;
     background: center center url('assets/coding-minified.jpg') no-repeat;
     background-size: cover;
-    /* border-radius: 1rem; */
 }
 
 .hse-logo {
@@ -95,7 +96,6 @@ ul {
     text-align: center;
     margin: 0;
     padding-bottom: 1.5rem;
-    /* margin: auto; */
 }
 
 .rules-list li {
@@ -119,7 +119,6 @@ ul {
 .timeline-container h2 {
     margin: 0 4rem 1rem 4rem;
     padding-bottom: 1.5rem;
-    /* border-bottom: 4px solid #2f3640; */
 }
 
 .timeline {
@@ -147,6 +146,16 @@ ul {
     margin: auto;
     color: #eee;
 }
+
+.reg-deadline {
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem 0;
+    background-color: #353b48;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+}   
 
 .topic-container {
     width: 80%;
@@ -201,12 +210,19 @@ ul {
     }
 
     .social-icon {
-        top: 1rem;
-        right: 1rem;
+        max-width: 2rem;
+        max-height: 2rem;
+        flex-basis: 100%;
+    }
+
+    .social-links a {
+        text-align: center;
+        padding: 0.5rem;
     }
 
     .rules-list,
     .timeline-container,
+    .reg-deadline,
     .topic-container,
     .header .container {
         width: 100%;
@@ -219,12 +235,13 @@ ul {
     }
 
     .social-icon {
-        width: 6rem;
-        height: 6rem;
+        width: 4rem;
+        height: 4rem;
     }
 
     .rules-list,
     .timeline-container,
+    .reg-deadline,
     .topic-container,
     .header .container {
         width: 65%;
