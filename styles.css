@@ -78,10 +78,29 @@ ul {
     background-size: cover;
 }
 
+.logos { 
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.logos img {
+    margin: 1rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+.ms-logo {
+    width: 20rem;
+    margin: auto;
+}
+
+
 .hse-logo {
     display: block;
     margin: 0 auto 2rem;
-    width: 4rem;
+    width: 10rem;
 }
 
 .rules-list {
@@ -155,7 +174,15 @@ ul {
     border-radius: 1rem;
     text-align: center;
     font-size: 1.25rem;
+    display: flex;
+    flex-flow: row;
+    /* background-color: #fff; */
 }   
+
+.reg-deadline img {
+    width: 20rem;
+    height: 20rem;
+}
 
 .topic-container {
     width: 80%;
